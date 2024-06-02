@@ -29,6 +29,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: '[name].bundle.js',
+    assetModuleFilename: 'assets/[hash][ext][query]'
   },
   optimization: {
 		splitChunks: {
@@ -45,17 +46,7 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/,
-        type: 'asset/resource',
-        use: [
-          "file-loader",
-          {
-            loader: "image-webpack-loader",
-            options: {
-              bypassingOnDebug: true,
-              disable: true,
-            },
-          },
-        ],
+        type: 'asset/resource'
       },
     ],
   },
