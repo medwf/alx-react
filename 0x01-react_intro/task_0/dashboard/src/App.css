@@ -1,0 +1,28 @@
+.App-header {
+  align-items: center;
+  display: flex;
+  border-bottom: solid 2px red;
+  margin-bottom: 60px;
+}
+
+.App-header h1 {
+  color: red;
+}
+
+.App-header img {
+  width: 200px;
+  height: 200px;
+}
+
+.App-body {
+  margin-left: 30px;
+}
+
+.App-footer {
+  border-top: 3px solid #e0354b;
+  position: absolute;
+  bottom: 0%;
+  width: 99%;
+  font-style: italic;
+  text-align: center;
+}
