@@ -3,17 +3,18 @@ import "./App.css";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import Login from "./Login/Login";
+import Notification from "./Notifications.js";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <div className="App-body">
-        <p>Login to access the full dashboard</p>
+    <React.Fragment>
+      <Notification />
+      <div className="App">
+        <Header />
         <Login />
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </React.Fragment>
   );
 }
 
