@@ -1,0 +1,15 @@
+Form {
+  padding: 20px;
+}
+
+form label {
+  margin-right: 12px;
+  margin-left: 12px;
+  margin-bottom: 10px;
+}
+form button {
+  margin-left: 10px;
+  background-color: rgb(255, 255, 254);
+  border-radius: 5px;
+  border-color: rgba(234, 236, 239, 0.3);
+}
